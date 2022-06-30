@@ -1,0 +1,45 @@
+.empresa{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.empresa__texto{
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 0.5em;
+}
+
+.empresa__imagem{
+    width: 50vw;
+    margin: 1em auto;
+    box-shadow: 1px 1px 5px var(--pretoprincipal);
+}
+
+.empresa__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width:1024px) {
+    .empresa__container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .empresa__container-texto{
+        display: flex;
+        flex-direction: column;
+    }
+    .empresa__imagem{
+        width: 20vw;
+        margin: 0 10em;
+    }
+
+    .empresa__texto{
+        font-size: 20px;
+        margin: 2em;
+    }
+}

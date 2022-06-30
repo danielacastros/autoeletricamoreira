@@ -1,0 +1,48 @@
+.horario{
+    padding: 1em;
+}
+.horario__container{
+    display: flex;     
+    justify-content: center;
+}
+
+.horario__imagem{
+    width: 25vw;
+    height: 25vw;
+}
+
+.horario__tabela{
+    text-align: center;
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: 1px solid var(--pretoprincipal);
+}
+
+.horario__cabecalho{
+    font-weight: 700;
+    width: 40vw;
+}
+
+.horario__itens{
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    color: var(--cinzamedio);
+}
+
+@media screen and (min-width:1024px) {
+    .horario{
+        padding: 1.5em 15em;
+    }
+    .horario__cabecalho{
+        font-size: 24px;
+    }
+    .horario__itens{
+        font-size: 22px;
+    }
+    .horario__imagem{
+        width: 15vw;
+        height: 15vw;
+        padding: 0 2em;
+    }
+}

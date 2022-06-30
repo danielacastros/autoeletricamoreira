@@ -1,0 +1,38 @@
+.localizacao{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.localizacao__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.localizacao__itens{
+    font-weight: 400;
+    color: var(--cinza-medio);
+    margin: 0.3em 0;
+}
+
+@media screen and (min-width:1024px){
+    .localizacao__container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .localizacao__lista{
+        width: 30vw;
+    }
+
+    .localizacao__mapa{
+        width: 70vw;
+    }
+
+    .localizacao__itens{
+        font-weight: 400;
+        font-size: 20px;
+        padding: 0.7em 0;
+    }
+}

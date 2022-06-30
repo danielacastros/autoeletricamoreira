@@ -1,0 +1,87 @@
+.servicos{
+    padding: 1em;
+}
+
+.servicos__lista{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista__item-imagem1, .lista__item-imagem2, .lista__item-imagem3, .lista__item-imagem4{
+    background-size: cover;
+    
+    height: 35vw;
+    width: 35vw;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.lista__item-imagem1{
+    background-image: url(../img/eletrica.jpg);
+}
+.lista__item-imagem2{
+    background-image: url(../img/injecao.jpg);
+}
+
+.lista__item-imagem3{
+    background-image: url(../img/motor.jpg);
+    
+}
+
+.lista__item-imagem4{
+    background-image: url(../img/ilum.jpg);    
+}
+
+.lista__item-texto{
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--amarelologo);
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px var(--pretoprincipal);
+}
+
+.servicos__lista-item{    
+    margin: 5vw;
+}
+
+@media screen and (min-width:1024px) {
+    .servicos{
+        padding: 1.5em 8em;
+    }
+
+    .servicos__lista{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .servicos__lista-item{    
+        margin: 0;
+    }
+
+    .lista__item-imagem1, .lista__item-imagem2, .lista__item-imagem3, .lista__item-imagem4{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .lista__item-texto{
+        font-size: 30px;
+        text-shadow: 2px 2px 3px var(--pretoprincipal);
+    }
+    .lista__item-texto:hover{
+        color: var(--vermelhologo);
+        font-size: 32px;
+        transition: 0.5s;
+    }
+
+    .lista__item-imagem1:hover, .lista__item-imagem2:hover, .lista__item-imagem3:hover, .lista__item-imagem4:hover{
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+}

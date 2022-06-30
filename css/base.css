@@ -1,0 +1,40 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(empresa.css);
+@import url(servicos.css);
+@import url(contato.css);
+@import url(horario.css);
+@import url(localizacao.css);
+
+:root{
+    --vermelhologo: #D80000;
+    --branco: #FFFFFF;
+    --pretoprincipal: #090804;
+    --amarelologo: #f5d64a;
+    --fonteprincipal: 'Fira Sans';
+    --fonte-logo: 'Goldman', cursive;
+    --cinza-claro: #E7E7E7;
+    --branco-gelo: #EFEEEC;
+    --cinza-medio: #9EA1A6;
+}
+
+body{
+    font-family: var(--fonteprincipal);
+    font-size: 14px;
+    background-color: var(--branco-gelo);
+}
+
+.titulo__secao{
+    font-size: 20px;
+    color: var(--pretoprincipal);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 0.6em 0;
+}
+
+@media screen and (min-width:1024px) {
+    .titulo__secao{
+        font-size: 30px;
+    }
+}
